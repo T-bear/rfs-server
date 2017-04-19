@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ user.username}}</title>
 </head>
 <body>
-    <h1>Blogish</h1>
-
     {% block content %}
+    {% if user.is_authenticated %}
+        <h1>Welcome {{ user.username }}</h1>
+    {% endif %}
+
     {% for post in object_list %}
+
 
     <h5>{{ post.post }}</h5>
 

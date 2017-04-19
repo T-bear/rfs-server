@@ -71,7 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'rfs.wsgi.application'
-
+LOGIN_REDIRECT_URL = '/user'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
